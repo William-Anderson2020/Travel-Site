@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>核の抑止力</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Fahkwang|Permanent+Marker|Staatliches" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script>
+		function contrastDown() {
+			document.getElementById('navigationbackground').style.filter = "grayscale(25%)";
+		}
+
+		function contrastReturn() {
+			document.getElementById('navigationbackground').style.filter = "grayscale(0%)";
+		}
+		function closePopup() {
+			document.getElementById('navi-toggle').checked = false;
+		}
+		// function bookingFlip() {
+		// 	var bookingFront = document.getElementById('bookingbutton');
+		// 	bookingFront.classList.add("booking_flip");
+		// 	var bookingBack = document.getElementById('bookingbuttonback');
+		// 	bookingBack.classList.add("bookingback_flip");
+		// }
+		// function bookingFlipRevert() {
+		// 	var bookingFront = document.getElementById('bookingbutton');
+		// 	bookingFront.classList.remove("booking_flip")
+		// 	var bookingBack = document.getElementById('bookingbuttonback');
+		// 	bookingBack.classList.remove("bookingback_flip");
+		// }
+	</script>
+</head>
+<!-- <audio autoplay><source src="they-played-us-like-a-fiddle.mp3" type="audio/mpeg"></audio> -->
+<body>
+	<div class="navigation">
+		<input type="checkbox" class="navigation_checkbox" id="navi-toggle">
+
+		<label for="navi-toggle" class="navigation_button">
+			<span class="navigation_icon"></span>
+		</label>
+
+		<div class="navigation_background" id="navigationbackground">&nbsp;</div>
+		<nav class="navigation_nav">
+			<ul class="navigation_list" id="navigationlist">
+				<li class="navigation_item">
+						<a href="#home" class="navigation_link" onmouseover="contrastDown()" onmouseleave="contrastReturn()" onclick="closePopup()"> Home </a>
+				</li>
+				<li class="navigation_item">
+						<a href="#overview" class="navigation_link" onmouseover="contrastDown()" onmouseleave="contrastReturn()" onclick="closePopup()"> Overview </a>
+				</li>
+				<li class="navigation_item">
+						<a href="#tours" class="navigation_link" onmouseover="contrastDown()" onmouseleave="contrastReturn()" onclick="closePopup()"> Tours </a>
+				</li>
+				<li class="navigation_item">
+						<a href="#reviews" class="navigation_link" onmouseover="contrastDown()" onmouseleave="contrastReturn()" onclick="closePopup()"> Reviews </a>
+				</li>
+				<li class="navigation_item">
+						<a href="#booking" class="navigation_link" onmouseover="contrastDown()" onmouseleave="contrastReturn()" onclick="closePopup()"> Booking </a>
+				</li>
+				<li class="navigation_item">
+						<a href="#media" class="navigation_link" onmouseover="contrastDown()" onmouseleave="contrastReturn()" onclick="closePopup()"> Media </a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="container">
+		<div class="cover">
+			<div class="splash_page" id="home">
+				<h1 class="header_title">See The World</h1> <br>
+				<!-- <span class="header_arrow"><i class="material-icons">arrow_drop_down</i></span>  -->
+				<h1 class="header_subtitle">Read More</h1>
+				<!-- <span class="header_arrow"><i class="material-icons">arrow_drop_down</i></span> -->
+			</div>
+		</div>
+		<main>
+			<div class="composition" id="overview">
+				<div class="row">
+					<div class="col-1-of-2">
+						<div class="composition_header"> Something about the East Coast</div>
+							<div class="composition_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae purus blandit, convallis nisi eget, ornare sapien. Phasellus ut scelerisque justo, a commodo nulla. Interdum et malesuada fames ac 核 ante ipsum primis in faucibus. <span class="mobile_overflow"> Sed eget efficitur justo. Proin id varius diam. Curabitur venenatis の varius fermentum. Fusce ac imperdiet nisi. Aliquam vulputate nisl orci, sed scelerisque risus pellentesque sed. Vivamus tempus eu sem at lobortis. Integer ornare sem 抑 sit amet consectetur sollicitudin. Suspendisse mollis magna massa, at pretium sem fringilla sed. Sed vulputate neque sed mauris congue, et semper 止 justo lacinia. Aenean vitae sodales purus. Vestibulum bibendum mauris nec enim porttitor posuere.力
+							Etiam feugiat mauris sed vestibulum consequat. Pellentesque vel mi suscipit, pretium diam et, rhoncus erat. Quisque vel vehicula urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed justo sit amet arcu rhoncus congue. Mauris ultrices metus suscipit molestie sagittis. Maecenas fermentum risus scelerisque metus venenatis dignissim.</span>
+						</div>
+					</div>
+					<div class="col-1-of-2">
+						<div class="composition_image_cluster">
+							<a class="popup_link1" href="#popup_image1"><img class="composition_image image_1" src="img/ManhattenBridge.jpg" alt="placeholder"></a>
+							<a href="#popup_image2"><img class="composition_image image_2" src="img/PhiladelphiaCityHall.jpg" alt="placeholder"></a>
+							<a href="#popup_image3"><img class="composition_image image_3" src="img/AcornStreetBoston.jpg" alt="placeholder"></a>
+							<!-- <img class="popup popup_image1" src="img/ManhattenBridge.jpg"> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="composition composition_cards" id="tours">
+				<div class="composition_cards_row">
+					<div class="card">
+						<div class="card-side card-side-front">
+							<div class="card-header card-1">
+								<div class="card-header-title">Philidelphia</div>
+							</div>
+							<div class="card-content">
+								<div class="card-content-line">
+								Crucial center of colonial political activity, and former capital of the United States.</div>
+								<div class="card-content-line">Home of 67 National Heritage Landmarks and 22 UNESCO World Heritage Sites.</div>
+								<div class="card-content-line">Visit Fairmount Park, the largest urban park in the U.S. </div>
+							</div>
+						</div>
+						<div class="card-side card-side-back">
+							<iframe class="card-map" src="https://www.google.com/maps/d/embed?mid=1m9lQXoJpD43g8NVNvo0QWR2d-tquaX4W"></iframe>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-side card-side-front">
+							<div class="card-header card-2">
+								<div class="card-header-title">New York</div>
+							</div>
+							<div class="card-content">
+								<div class="card-content-line">Visit the biggest city in the western hemisphere.</div>
+								<div class="card-content-line">See iconic Times Square and Central Park.</div>
+								<div class="card-content-line">Go to the historical Liberty Island and Ellis Island.</div>
+							</div>
+						</div>
+						<div class="card-side card-side-back">
+							<iframe class="card-map" src="https://www.google.com/maps/d/embed?mid=1VnIz6c7Y5EmeyEcZWF--3J3qZQFYxYL-"></iframe>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-side card-side-front">
+							<div class="card-header card-3">
+							<div class="card-header-title">Boston</div>
+							</div>
+							<div class="card-content">
+								<div class="card-content-line">Walk the freedom trail, a 2.5 mile path passing 16 historical locations.</div>
+								<div class="card-content-line">Site of the Boston Tea Party and Boston Massacre.</div>
+								<div class="card-content-line">See the first public park in the U.S. the Boston Commons.</div>
+							</div>
+						</div>
+						<div class="card-side card-side-back">
+							<iframe class="card-map" src="https://www.google.com/maps/d/embed?mid=1MHavCJNZldxjuIuuo92SJwZL7uetvf6A
+							"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="composition composition_quote" id="reviews">
+				<div class="composition_quote_block">
+					<div class="composition_quote_block_header">
+						<img class="composition_quote_block_image" src="img/icon/profile_placeholder.png">
+						<div class="composition_quote_block_image_name">
+							Name Here
+						</div>
+					</div>
+					<span class="big_quotes">“</span><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae purus at nibh blandit venenatis.</em>
+				</div>
+				<div class="composition_quote_block">
+					<div class="composition_quote_block_header">
+						<img class="composition_quote_block_image" src="img/icon/profile_placeholder.png">
+						<div class="composition_quote_block_image_name">
+							Name Here
+						</div>
+					</div>
+					<span class="big_quotes">“</span><em>Lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat.</em>
+				</div>
+			</div>
+			<div class="composition composition_booking" id="booking">
+				<div class="composition_booking_button">
+					<a class="popup_booking_link" href="#popup_booking">
+						<div class="composition_booking_button_front" id="bookingbutton">
+						Book Now
+						</div>
+					</a>
+				</div>
+				<!-- <div class="popup_booking" id="popup_booking">
+					<div class="popup_booking_content">
+						DO NOT ATTEMPT TO BOARD THE HELICOPTER
+					</div>
+				</div> -->
+			</div>
+		</main>
+		<div class="footer" id="footer">
+			<div class="media-links" id="media">
+				<div class="icon">
+					<div class="icon-empty">
+						<img class="icon" src="img/icon/Steam Empty.png">
+					</div>
+					<div class="icon-fill">
+						<a href="https://steamcommunity.com/id/thephantomfury/"><img class="icon" src="img/icon/Steam Fill.png"></a>
+					</div>
+				</div>
+				<div class="icon">
+					<div class="icon-empty">
+						<img class="icon" src="img/icon/Twitter Empty.png">
+					</div>
+					<div class="icon-fill">
+						<a href="https://twitter.com/E_Rutherford_"><img class="icon" src="img/icon/Twitter Fill.png"></a>
+					</div>
+				</div>
+				<div class="icon">
+					<div class="icon-empty">
+						<img class="icon" src="img/icon/Youtube Empty.png">
+					</div>
+					<div class="icon-fill">
+						<a href="https://www.youtube.com/channel/UCd2JzvXJuUUOwaAoxBOnolQ?view_as=subscriber"><img class="icon" src="img/icon/Youtube Fill.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup_booking" id="popup_booking">
+		<div class="popup_booking_close_container">
+			<a href="#booking" class="popup_booking_close"></a>
+		</div>
+		<div class="popup_booking_content">
+			<div class="popup_booking_content_column_left popup_booking_content_column">
+				<div class="popup_booking_header">
+					Book Now
+				</div>
+				<a class="popup_booking_form_link" href="#popup_booking_form"><div class="popup_booking_button">Philadelphia</div></a>
+				<a class="popup_booking_form_link" href="#popup_booking_form"><div class="popup_booking_button">New York</div></a>
+				<a class="popup_booking_form_link" href="#popup_booking_form"><div class="popup_booking_button">Boston</div></a>
+			</div>
+			<div class="popup_booking_content_column_right popup_booking_content_column">
+				<img class="popup_booking_image popup_booking_image_1" src="img/ManhattenWTC.jpg">
+				<img class="popup_booking_image popup_booking_image_2" src="img/BostonSkyline.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="popup_booking" id="popup_booking_form">
+		<div class="popup_booking_content">
+			<a href="#booking" class="popup_booking_close"></a>
+			<div class="popup_booking_form">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
