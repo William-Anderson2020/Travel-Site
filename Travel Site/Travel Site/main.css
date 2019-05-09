@@ -26,6 +26,12 @@ html{
 
 @media screen and (max-width: 900px) {
 	html{
+		font-size: 50%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	html{
 		font-size: 40%;
 	}
 }
@@ -83,6 +89,12 @@ body{
 	/*-webkit-text-stroke: .01rem white;*/
 }
 
+@media screen and (max-width: 1200px){
+	.header_title{
+		pointer-events: none;
+	}
+}
+
 .header_subtitle{
 	text-align: center;
 	font-family: 'Permanent Marker', cursive;
@@ -135,6 +147,12 @@ body{
 	backface-visibility: hidden;
 }
 
+@media screen and (max-width: 1200px){
+	.header_subtitle{
+		pointer-events: none;
+	}
+}
+
 .composition_header{
 	font-size: 4rem;
 	text-align: center;
@@ -182,7 +200,7 @@ body{
 	top: -10rem;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1200px){
 	.image_1{
 	left: 0rem;
 	top: 0rem;
@@ -190,19 +208,25 @@ body{
 
 	.image_2{
 	left: 0rem;
-	top: 0rem;
+	top: -5rem;
 	}
 
 	.image_3{
 	left: 0rem;
-	top: 0rem;
+	top: -10rem;
+	}
+
+	.composition_image{
+		transform: scale(.9);
 	}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1200px){
 	.composition_image_cluster{
 		display: flex;
 		flex-direction: column;
+		align-content: center;
+		pointer-events: none;
 	}
 }
 
@@ -238,7 +262,19 @@ body{
 	font-family: 'Fahkwang', sans-serif;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1200px){
+	.composition_description{
+		font-size: 1.5rem;
+	}
+	.mobile_overflow{
+		/*display: none;*/
+	}
+	.composition_header{
+		font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 400px){
 	.composition_description{
 		font-size: 2rem;
 	}
@@ -304,14 +340,16 @@ body{
 .composition_cards_row{
 	display: flex; 
 	justify-content: space-around;
-	width: 95vw;
-	height: 0rem;
+	width: 100vw;
+	height: 90vh;
 }
 
 .card{
 	margin-top: 15vh;
 	width: 15rem;
 	height: 50rem;
+	/*width: 20vw;
+	height: 50vh;*/
 	/*background-color: red;*/
 	font-size: 2vh;
 	position: relative;
@@ -319,13 +357,17 @@ body{
 	-moz-perspective:150rem;
 }
 
-@media screen and (max-width:900px){
-	.card{
-		width: 90vw;
-	}
+@media screen and (max-width:1200px){
+	
 	.composition_cards_row{
+		display: flex;
 		flex-direction: column;
 		height: 100vh;
+		justify-content: center;
+	}
+
+	.card{
+		pointer-events: none;
 	}
 }
 
@@ -356,6 +398,13 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	background-color: var(--color-tertiary-light);
 	z-index: 1;
 	transition: all 1s;
+}
+
+@media screen and (max-width: 1200px){
+	.card-side-front{
+		width: 90vw;
+		height: 30vh;
+	}
 }
 
 .card-side-back{
@@ -394,6 +443,12 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	background-size: cover;
 }
 
+@media screen and (max-width: 1200px){
+	.card-header{
+		height: 10vh;
+	}
+}
+
 .card-content{
 	font-size: 1.5rem;
 	text-align: center;
@@ -414,7 +469,7 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	position: relative;
 }
 
-@media{
+@media screen and (max-width: 900px){
 	.icon{
 		width: 15rem;
 		height: 15rem;
@@ -506,6 +561,12 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	align-items: center;
 	font-family: 'Fahkwang', sans-serif;
 	font-size: 1.9rem;
+}
+
+@media screen and (max-width: 1200px){
+	.composition_quote_block{
+		pointer-events: none;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -706,6 +767,12 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	 transition: 1s;
 }
 
+@media screen and (max-width: 1200px){
+	.navigation_link{
+		/*pointer-events: none;*/
+	}
+}
+
 .composition_booking{
 	display: flex;
 	justify-content: center;
@@ -734,6 +801,8 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 @media screen and (max-width: 900px){
 	.composition_booking_button_front{
 		font-size: 10rem;
+		width: 40rem;
+		height: 40rem;
 	}
 }
 
@@ -896,6 +965,7 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 .popup_booking_form_link{
 	text-decoration: none;
 	color: black;
+	word-wrap: break-word;
 }
 
 .popup_booking_form{
