@@ -95,6 +95,12 @@ body{
 	}
 }
 
+@media screen and (max-height: 650px){
+	.header_title{
+		font-size: 10rem;
+	}
+}
+
 .header_subtitle{
 	text-align: center;
 	font-family: 'Permanent Marker', cursive;
@@ -213,7 +219,7 @@ body{
 
 	.image_3{
 	left: 0rem;
-	top: -10rem;
+	/*top: -10rem;*/
 	}
 
 	.composition_image{
@@ -227,6 +233,19 @@ body{
 		flex-direction: column;
 		align-content: center;
 		pointer-events: none;
+	}
+}
+
+@media screen and (max-height: 650px){
+	.image_1{
+		display: none;
+	}
+	.image_3{
+		display: none;
+	}
+	.image_2{
+		top: 4rem;
+		transform: scale(1.5);
 	}
 }
 
@@ -274,7 +293,7 @@ body{
 	}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
 	.mobile_overflow_2{
 		display: none;
 	}
@@ -292,6 +311,15 @@ body{
 	}
 	.composition_header{
 		font-size: 3.5rem;
+	}
+}
+
+@media screen and (max-height: 650px){
+	.mobile_overflow_1{
+		display: none;
+	}
+	.mobile_overflow_2{
+		display: none;
 	}
 }
 
@@ -491,6 +519,7 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	.icon{
 		width: 15rem;
 		height: 15rem;
+		pointer-events: none;
 	}
 }
 
@@ -587,7 +616,7 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
 	.composition_quote_block{
 		font-size: 1.5rem;
 	}
@@ -609,7 +638,7 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	font-family: 'Sorts Mill Goudy', serif;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
 	.big_quotes{
 		display: none;
 	}
@@ -822,7 +851,7 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	perspective: 150rem;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
 	.composition_booking_button_front{
 		font-size: 10rem;
 		width: 40rem;
