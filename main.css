@@ -245,7 +245,7 @@ body{
 	}
 	.image_2{
 		top: 4rem;
-		transform: scale(1.5);
+		/*transform: scale(1.5);*/
 	}
 }
 
@@ -299,9 +299,9 @@ body{
 	}
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
 	.composition_description{
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 	.mobile_overflow_1{
 		display: none;
@@ -310,7 +310,7 @@ body{
 		display: none;
 	}
 	.composition_header{
-		font-size: 3.5rem;
+		font-size: 3rem;
 	}
 }
 
@@ -373,8 +373,8 @@ body{
 	clip-path: polygon(50% 10%, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
 	box-shadow: 0 1.5rem 4rem rgba(0,0,0,11);*/
 }
-
-@media screen and (max-width: 1024px){ /*avoiding my problems rather than face them.*/
+/*avoiding my problems rather than face them.*/
+@media screen and (max-width: 1024px){ 
 	.composition_cards{
 		display: none;
 	}
@@ -407,13 +407,33 @@ body{
 	
 	.composition_cards_row{
 		display: flex;
+		position: relative;
+		align-content: center;
 		flex-direction: column;
-		height: 100vh;
-		justify-content: center;
+	}
+
+	.composition_cards{
+		height: 200vh;
 	}
 
 	.card{
 		pointer-events: none;
+		position: relative;
+	}
+
+	.card-1{
+		position: relative;
+		top: -10rem;
+	}
+
+	.card-2{
+		position: relative;
+		top: -30rem;
+	}
+
+	.card-3{
+		position: relative;
+		top: -20rem;
 	}
 }
 
