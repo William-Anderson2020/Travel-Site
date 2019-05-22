@@ -972,6 +972,18 @@ clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 	top: 2rem;
 }
 
+@media screen and (max-width: 1100px){
+	.popup_booking_close::before, .popup_booking_close::after{
+		right: 10rem;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.popup_booking_close::before, .popup_booking_close::after{
+		right: 5rem;
+	}
+}
+
 .popup_booking_close::before{
 	transform: rotate(45deg);
 }
